@@ -26,6 +26,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, () => {
-  // eslint-disable-next-line no-console
   console.log(`Server listening on http://localhost:${port}`);
 });

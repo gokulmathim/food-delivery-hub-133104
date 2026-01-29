@@ -1,5 +1,17 @@
 dist
 node_modules
 coverage
+.knowledge
+.knowledge/**
 .env
 .env.*
+npm-debug.log
+yarn-error.log
+.pnp
+.pnp.js
+.cache
+.next
+.nuxt
+.vuepress/dist
+.serverless
+.dynamodb

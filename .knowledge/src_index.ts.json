@@ -1,1 +1,80 @@
-{"is_source_file": true, "format": "TypeScript", "description": "This file sets up a simple HTTP server with a health check endpoint and a default message, including logic to determine the port from environment variables.", "external_files": ["node:http"], "external_methods": ["process.env", "Number.parseInt", "Number.isFinite"], "published": [], "classes": [], "methods": [{"name": "function getPortFromEnv(): number { getPortFromEnv", "description": "Safely parses the PORT environment variable or defaults to 3001.", "scope": "", "scopeKind": ""}], "calls": ["http.createServer", "server.listen", "console.log"], "search-terms": ["HTTP server", "Node.js", "TypeScript", "health endpoint", "environment variable parsing"], "state": 2, "file_id": 4, "knowledge_revision": 13, "git_revision": "98173d55de2632ee88096a2650239eb4aebdcb62", "ctags": [{"_type": "tag", "name": "getPortFromEnv", "path": "/home/kavia/workspace/code-generation/food-delivery-hub-133104/src/index.ts", "pattern": "/^function getPortFromEnv(): number {$/", "language": "TypeScript", "kind": "function"}, {"_type": "tag", "name": "parsed", "path": "/home/kavia/workspace/code-generation/food-delivery-hub-133104/src/index.ts", "pattern": "/^  const parsed = Number.parseInt(raw, 10);$/", "language": "TypeScript", "kind": "constant", "scope": "getPortFromEnv", "scopeKind": "function"}, {"_type": "tag", "name": "port", "path": "/home/kavia/workspace/code-generation/food-delivery-hub-133104/src/index.ts", "pattern": "/^const port = getPortFromEnv();$/", "language": "TypeScript", "kind": "constant"}, {"_type": "tag", "name": "raw", "path": "/home/kavia/workspace/code-generation/food-delivery-hub-133104/src/index.ts", "pattern": "/^  const raw = process.env.PORT ?? '3001';$/", "language": "TypeScript", "kind": "constant", "scope": "getPortFromEnv", "scopeKind": "function"}, {"_type": "tag", "name": "server", "path": "/home/kavia/workspace/code-generation/food-delivery-hub-133104/src/index.ts", "pattern": "/^const server = http.createServer((req, res) => {$/", "language": "TypeScript", "kind": "constant"}], "hash": "14bc6965b212720f30143c002799ede9", "format-version": 4, "code-base-name": "food-delivery-hub-133104", "filename": "src/index.ts", "revision_history": [{"13": "98173d55de2632ee88096a2650239eb4aebdcb62"}]}
+{
+  "is_source_file": true,
+  "format": "TypeScript",
+  "description": "This file sets up a simple HTTP server with a health check endpoint and a default message, including logic to determine the port from environment variables.",
+  "external_files": ["node:http"],
+  "external_methods": ["process.env", "Number.parseInt", "Number.isFinite"],
+  "published": [],
+  "classes": [],
+  "methods": [
+    {
+      "name": "function getPortFromEnv(): number { getPortFromEnv",
+      "description": "Safely parses the PORT environment variable or defaults to 3001.",
+      "scope": "",
+      "scopeKind": ""
+    }
+  ],
+  "calls": ["http.createServer", "server.listen", "console.log"],
+  "search-terms": [
+    "HTTP server",
+    "Node.js",
+    "TypeScript",
+    "health endpoint",
+    "environment variable parsing"
+  ],
+  "state": 2,
+  "file_id": 4,
+  "knowledge_revision": 13,
+  "git_revision": "98173d55de2632ee88096a2650239eb4aebdcb62",
+  "ctags": [
+    {
+      "_type": "tag",
+      "name": "getPortFromEnv",
+      "path": "/home/kavia/workspace/code-generation/food-delivery-hub-133104/src/index.ts",
+      "pattern": "/^function getPortFromEnv(): number {$/",
+      "language": "TypeScript",
+      "kind": "function"
+    },
+    {
+      "_type": "tag",
+      "name": "parsed",
+      "path": "/home/kavia/workspace/code-generation/food-delivery-hub-133104/src/index.ts",
+      "pattern": "/^  const parsed = Number.parseInt(raw, 10);$/",
+      "language": "TypeScript",
+      "kind": "constant",
+      "scope": "getPortFromEnv",
+      "scopeKind": "function"
+    },
+    {
+      "_type": "tag",
+      "name": "port",
+      "path": "/home/kavia/workspace/code-generation/food-delivery-hub-133104/src/index.ts",
+      "pattern": "/^const port = getPortFromEnv();$/",
+      "language": "TypeScript",
+      "kind": "constant"
+    },
+    {
+      "_type": "tag",
+      "name": "raw",
+      "path": "/home/kavia/workspace/code-generation/food-delivery-hub-133104/src/index.ts",
+      "pattern": "/^  const raw = process.env.PORT ?? '3001';$/",
+      "language": "TypeScript",
+      "kind": "constant",
+      "scope": "getPortFromEnv",
+      "scopeKind": "function"
+    },
+    {
+      "_type": "tag",
+      "name": "server",
+      "path": "/home/kavia/workspace/code-generation/food-delivery-hub-133104/src/index.ts",
+      "pattern": "/^const server = http.createServer((req, res) => {$/",
+      "language": "TypeScript",
+      "kind": "constant"
+    }
+  ],
+  "hash": "14bc6965b212720f30143c002799ede9",
+  "format-version": 4,
+  "code-base-name": "food-delivery-hub-133104",
+  "filename": "src/index.ts",
+  "revision_history": [{ "13": "98173d55de2632ee88096a2650239eb4aebdcb62" }]
+}

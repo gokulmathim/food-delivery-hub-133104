@@ -6,9 +6,20 @@ const eslintConfigPrettier = require('eslint-config-prettier');
 
 /** @type {import("eslint").Linter.FlatConfig[]} */
 module.exports = [
-  // Ignore build artifacts and dependencies
+  // Ignore build artifacts, dependencies, and internal tooling folders.
   {
-    ignores: ['dist/**', 'node_modules/**'],
+    ignores: ['dist/**', 'node_modules/**', '.knowledge/**'],
+  },
+
+  // Ensure this config file itself is linted with Node globals available.
+  // (ESLint will lint eslint.config.js unless ignored; this avoids no-undef on require/module.)
+  {
+    files: ['eslint.config.js'],
+    languageOptions: {
+      globals: {
+        ...globals.node,
+      },
+    },
   },
 
   js.configs.recommended,
@@ -20,7 +31,7 @@ module.exports = [
       parser: tsParser,
       parserOptions: {
         ecmaVersion: 2020,
-        sourceType: 'script'
+        sourceType: 'script',
       },
       globals: {
         ...globals.node,
@@ -30,10 +41,10 @@ module.exports = [
       '@typescript-eslint': tsPlugin,
     },
     rules: {
-      ...tsPlugin.configs.recommended.rules
+      ...tsPlugin.configs.recommended.rules,
     },
   },
 
   // Turn off rules that conflict with Prettier formatting
-  eslintConfigPrettier
+  eslintConfigPrettier,
 ];

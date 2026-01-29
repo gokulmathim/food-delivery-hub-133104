@@ -1,1 +1,21 @@
-{"is_source_file": false, "format": "", "description": "", "external_files": [], "external_methods": [], "published": [], "classes": [], "methods": [], "calls": [], "search-terms": [], "state": 2, "file_id": 2, "knowledge_revision": 11, "git_revision": "98173d55de2632ee88096a2650239eb4aebdcb62", "hash": "6ba527507047edd05914b359c739d6cd", "format-version": 4, "code-base-name": "food-delivery-hub-133104", "filename": "package.json", "revision_history": [{"11": "98173d55de2632ee88096a2650239eb4aebdcb62"}]}
+{
+  "is_source_file": false,
+  "format": "",
+  "description": "",
+  "external_files": [],
+  "external_methods": [],
+  "published": [],
+  "classes": [],
+  "methods": [],
+  "calls": [],
+  "search-terms": [],
+  "state": 2,
+  "file_id": 2,
+  "knowledge_revision": 11,
+  "git_revision": "98173d55de2632ee88096a2650239eb4aebdcb62",
+  "hash": "6ba527507047edd05914b359c739d6cd",
+  "format-version": 4,
+  "code-base-name": "food-delivery-hub-133104",
+  "filename": "package.json",
+  "revision_history": [{ "11": "98173d55de2632ee88096a2650239eb4aebdcb62" }]
+}
